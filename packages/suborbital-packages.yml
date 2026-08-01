@@ -1,0 +1,60 @@
+generated: '2026-07-21'
+method: searched
+source: npm registry + pkg.go.dev + github.com/suborbital
+note: >-
+  Suborbital was a WebAssembly developer-tools company (SE2 / Suborbital
+  Extension Engine, formerly Suborbital Compute; Atmo; E2 Core / Reactr; Sat;
+  the subo CLI). The company was acquired by F5 in 2023 and the hosted product
+  was wound down, but these first-party open-source client libraries remain
+  published on npm, the Go module proxy, and Homebrew. Registry entries below
+  were verified live 2026-07-21.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@suborbital/se2"
+    url: https://www.npmjs.com/package/@suborbital/se2
+    install: npm install @suborbital/se2
+    official: true
+    description: JavaScript/TypeScript SDK for the Suborbital Extension Engine (SE2).
+  - language: javascript
+    registry: npm
+    name: "@suborbital/compute"
+    url: https://www.npmjs.com/package/@suborbital/compute
+    install: npm install @suborbital/compute
+    official: true
+    description: JavaScript/TypeScript SDK for the Suborbital Compute network (former name of SE2).
+  - language: javascript
+    registry: npm
+    name: "@suborbital/plugin"
+    url: https://www.npmjs.com/package/@suborbital/plugin
+    install: npm install @suborbital/plugin
+    official: true
+    description: Suborbital Plugin API for authoring JavaScript/TypeScript WebAssembly plugins.
+  - language: javascript
+    registry: npm
+    name: "@suborbital/runnable"
+    url: https://www.npmjs.com/package/@suborbital/runnable
+    install: npm install @suborbital/runnable
+    official: true
+    description: Suborbital Runnable API for JavaScript/TypeScript plugins.
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/suborbital/se2-go
+    url: https://pkg.go.dev/github.com/suborbital/se2-go
+    install: go get github.com/suborbital/se2-go
+    official: true
+    description: Go client library for Suborbital Compute / SE2.
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/suborbital/subo
+    url: https://pkg.go.dev/github.com/suborbital/subo
+    install: go install github.com/suborbital/subo@latest
+    official: true
+    description: The Suborbital CLI (subo) — builds Wasm plugins, scaffolds projects, deploys to SE2.
+  - language: shell
+    registry: homebrew
+    name: suborbital/subo/subo
+    url: https://github.com/suborbital/homebrew-tap
+    install: brew tap suborbital/subo && brew install subo
+    official: true
+    description: Homebrew tap for the subo CLI (macOS, Intel and Apple Silicon).

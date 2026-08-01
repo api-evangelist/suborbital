@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/suborbital/subo
+name: subo
+description: >-
+  subo is the command-line helper for the Suborbital Development Platform. It
+  builds WebAssembly modules (plugins), generates new projects and config files,
+  and deploys to the Suborbital Extension Engine (SE2). A Docker-based toolchain
+  lets you build plugins without installing language-specific toolchains.
+binary: subo
+package: packages/suborbital-packages.yml
+install:
+  - method: homebrew
+    command: brew tap suborbital/subo && brew install subo
+    platforms: [macOS-intel, macOS-arm64]
+  - method: go
+    command: go install github.com/suborbital/subo@latest
+    note: installs to $GOPATH/bin
+windows_supported: false
+commands:
+  - name: build
+    description: Build a WebAssembly plugin/module from source.
+  - name: create
+    description: Scaffold a new project, plugin, handler, or release.
+    subcommands: [project, plugin, handler, release]
+  - name: deploy
+    description: Deploy a built bundle to a Suborbital platform.
+  - name: dev
+    description: Run a local development loop for plugins.
+  - name: push
+    description: Push a built plugin/bundle to a registry or platform.
+  - name: clean
+    description: Remove build artifacts.
+  - name: docs
+    description: Generate CLI documentation.
+  - name: se2
+    description: Manage the Suborbital Extension Engine (SE2).
+    subcommands: [create-token, deploy, migrate-storage]

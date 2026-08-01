@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: npm registry + github.com/suborbital/editor-react
+note: >-
+  First-party embeddable client-side UI component published by Suborbital.
+  Distinct from the server-side SDKs catalogued in packages/. Verified live on
+  npm 2026-07-21.
+components:
+  - family: code-editor
+    name: "@suborbital/editor-react"
+    kind: react-component
+    url: https://www.npmjs.com/package/@suborbital/editor-react
+    repo: https://github.com/suborbital/editor-react
+    install: npm install @suborbital/editor-react
+    official: true
+    description: >-
+      Embed the Suborbital code editor into a React application — the
+      hosted/prebuilt authoring surface used to write and edit Suborbital
+      Compute / SE2 plugins in the browser.

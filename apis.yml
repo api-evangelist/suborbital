@@ -1,21 +1,49 @@
 aid: suborbital
 name: Suborbital
-description: 'Suborbital is a company surfaced as a portfolio company of amplify-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Suborbital was a developer-tools company building a WebAssembly-based extensibility
+  platform: the Suborbital Extension Engine (SE2, formerly Suborbital Compute), a hosted
+  service for running sandboxed third-party plugins; E2 Core / Reactr, a function scheduler
+  for Go and WebAssembly; Sat, a tiny fast Wasm edge-compute server; Grav, an embedded
+  decentralized message bus; and the subo CLI for building Wasm plugins and scaffolding
+  projects. Suborbital was acquired by F5 in 2023 and the hosted product was subsequently
+  wound down; the suborbital.dev domain has since been repurposed as an unrelated content
+  blog. The first-party open-source client libraries (npm @suborbital/*, the se2-go Go
+  client, and the subo CLI) and the 32-repo GitHub organization remain publicly available.
 url: https://raw.githubusercontent.com/api-evangelist/suborbital/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/54323182?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - amplify-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: >-
+  Acquired by F5 (2023); hosted product wound down. suborbital.dev now serves an
+  unrelated repurposed content blog. Open-source packages/CLI/GitHub org still live.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Developer Tools
+- WebAssembly
+- Edge Compute
+- Serverless
+- Plugins
+- Extensibility
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,20 @@ maintainers:
 common:
 - type: Website
   url: https://suborbital.dev
+- type: GitHubOrganization
+  url: https://github.com/suborbital
+- type: Packages
+  url: packages/suborbital-packages.yml
+- type: SDKs
+  url: packages/suborbital-packages.yml
+- type: CLI
+  url: cli/suborbital-cli.yml
+- type: Components
+  url: components/suborbital-components.yml
+- type: DomainSecurity
+  url: security/suborbital-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

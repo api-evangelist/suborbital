@@ -33,7 +33,7 @@ x-status: defunct
 x-status-note: >-
   Acquired by F5 (2023); hosted product wound down. suborbital.dev now serves an
   unrelated repurposed content blog. Open-source packages/CLI/GitHub org still live.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
